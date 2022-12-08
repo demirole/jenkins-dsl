@@ -25,5 +25,9 @@ void createPipeline(it) {
                 }
             }
         }
+
+        parameters {
+            choiceParam('Target', ['TEST', 'STAGE', 'PROD'], 'System to target')
+        }
     }
 }
